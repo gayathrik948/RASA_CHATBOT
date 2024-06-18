@@ -1,0 +1,34 @@
+#!/bin/sh
+
+NAME=${PROJECT_NAME:-hr_portal_chatbot}
+export C_FORCE_ROOT="true"
+export PYTHONPATH=/src/
+case "$1" in
+    init)
+        echo "initializing ..."
+        mongoimport --host=${DB_SAM_HOST} --port=${DB_SAM_PORT} --db ${DB_SAM} --collection config_responses --authenticationDatabase ${AUTH_DB_SAM} --username ${DB_SAM_USER} --password ${DB_SAM_PASS} --file other/data/config_responses.json --type json --jsonArray
+        ;;
+    endpoint)
+        echo "Starting core endpoint..."
+        rasa run -m models --endpoints endpoints.yml --enable-api --cors "*" --debug
+        ;;
+    action)
+        echo "Starting action endpoint..."
+        rasa run actions -vv
+        ;;
+    env)
+        echo "Environment variables: "
+        echo "-------------------------------- "
+        env
+        echo "-------------------------------- "
+        ;;
+    conda)
+        echo ""
+        "$@"
+        ;;
+    debug|sh|bash)
+        echo "starting debugging mode..."
+        echo ""
+        /bin/sh
+        ;;
+esac

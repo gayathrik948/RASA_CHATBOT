@@ -1,0 +1,29 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: action_welcome
+  - intent: questions
+  - action: action_validate_keyword
+  - intent: goodbye
+  - action: action_endchat
+
+- story: sad path 1
+  steps:
+    - intent: greet
+    - action: action_welcome
+    - intent: goodbye
+    - action: action_endchat
+
+- story: ask question
+  steps:
+    - intent: questions
+    - action: action_validate_keyword
+
+- story: reset_chat
+  steps:
+  - intent: reset_chat
+  - action: action_reset_chat

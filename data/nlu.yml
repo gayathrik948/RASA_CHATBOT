@@ -1,0 +1,1217 @@
+version: "2.0"
+
+nlu:
+- lookup: keyphrase
+  examples: |
+    -Medicare deduction
+    -Exemption
+    -Accrued Vacation Pay
+    -Age report
+    -Shift  Differentials
+    -Bill
+    -Mandatory
+    -Modes of payment
+    -employee teaching
+    -Best Practices
+    -Goods receipt note
+    -employee investigations
+    -Collection
+    -employement formalities
+    -W4 form
+    -legal requirement
+    -AR Billing amount
+    -Place of work
+    -Medicare taxes
+    -ACA
+    -New Hire Reporting
+    -Remit to address
+    -Taken
+    -Invoice date
+    -office
+    -Legally required
+    -PO
+    -laptop & Personal computer
+    -The Federal Unemployment Tax Act
+    -drug test
+    -employee alignment
+    -employee coaching
+    -Three way matching
+    -Aging
+    -SOX Audit
+    -Financial Accounting Standard Board
+    -employee direction
+    -employee inquiry
+    -Withholding Tax Form
+    -Payment age
+    -employee education
+    -Paid amount
+    -employee introduction
+    -Offices
+    -employee documentation
+    -data verifications
+    -employee induction
+    -Proof of delivery
+    -employee inspection
+    -employee arrangement
+    -offer letter changes
+    -Due amount
+    -employee examination
+    -FASB
+    -Corrected Invoice
+    -Dispute management
+    -employee positioning
+    -Invoice accuracy
+    -PTO
+    -Unbilled
+    -Invoice
+    -Legal Guidlines
+    -office stations
+    -Laws
+    -applicable rules
+    -Leave of Absense
+    -Job order
+    -Account Receivable
+    -Social Security contribution
+    -Hours approved
+    -to be processed
+    -Balance due
+    -Unbilled amount
+    -Pre-tax
+    -Paid Time Off
+    -Account Receivable best practices
+    -Affordable Care Act
+    -employee tuition
+    -FICA
+    -Region
+    -employees data verification
+    -Active
+    -Aging report
+    -offer changes
+    -Invoice delivery status
+    -employee placement
+    -employement documentation
+    -Purchase Order
+    -Federal
+    -3way matching
+    -employee's introduction
+    -Payment probablity
+    -Workplace
+    -employee training
+    -Holiday Pay 
+    -employee tune up
+    -AR Invoice
+    -Zone
+    -SUTA
+    -employee investigation
+    -employees inquiry
+    -Overdue
+    -Payment method
+    -Pretax
+    -offer of employment
+    -The State Unemployment Tax Act
+    -Payment conditions
+    -Overtime Hours
+    -employee reexamine
+    -Overdue payment charge
+    -office station
+    -employee familarization
+    -Posttax
+    -Ship to address
+    -offer of work
+    -employee revaluation
+    -Bill to address
+    -statutory requirement
+    -regulations
+    -employement forms
+    -employee assessment
+    -Social Security taxes
+    -Average days to pay
+    -Late payment charge
+    -employee followup
+    -Payment terms
+    -employement files
+    -employee survey
+    -Rules & regulation
+    -Billing amount
+    -office terminal
+    -Days Sales Outstanding
+    -Federal Insurance Contributions Act
+    -employee examinations
+    -office terminals
+    -On Call pay
+    -hours approved
+    -employee's inquiry
+    -delivery receipt
+    -employee look over
+    -Holiday Pay
+    -FUTA
+    -Fair Labor Standards Act
+    -HR Reviews & Conclusion
+    -Number of Employee
+    -Post-tax
+    -FLSA
+    -Disputes
+    -SOX Compliance
+    -Purchase order
+    -Auto Debit
+    -Unapproved
+    -approved
+    -Inaccurate invoice
+    -Pending
+    -Billing date
+    -employee data verification
+    -DSO
+    -Dollar Percenatge
+    -Law
+    -AR Unbilled amount
+    -Early pay discount
+    -Affordable Care Act 
+    -Sales
+    -Invoice Processing
+    -regulation
+    -Social Security deduction
+    -Statutory
+    -Bill date
+    -Direct debit
+    -employement forms filling
+    -Return
+    -Payment date
+    -employee reexamination
+    -employement records
+    -3 documents
+    -LOA
+    -Legal
+    -employee settling in
+    -Holiday Hours
+    -hours unapproved
+    -Total taxes
+    -Due date
+    -employement papers
+    -employee sharpening
+    -employee seasoning
+    -GRN
+    -employees history check
+    -paid date
+    -Invoice sent within TAT
+    -employee History check
+
+- intent: questions
+  examples: |
+    -What is mean by [Unbilled](keyphrase)
+    -What is [Aging](keyphrase) in AR
+    -Define [Paid amount](keyphrase) in Account Receivable
+    -What is [ACA](keyphrase) reporting eligibility?
+    -Define [Dispute management](keyphrase) in AR
+    -Give me the regulations related to the [employee induction](keyphrase)
+    -Describe [Days Sales Outstanding](keyphrase) (DSO) in Account Receivable
+    -What rules & regulations are applicable to [drug test](keyphrase)
+    -What are the [Mandatory](keyphrase) deductions?
+    -What is [Goods receipt note](keyphrase)?
+    -Eligibilty for [Affordable Care Act](keyphrase) reporting
+    -Which are the [regulations](keyphrase) applicable for my organisation
+    -What do you mean by an [Invoice](keyphrase)?
+    -Could you providethe total number of employee [Active](keyphrase) on  Leave of Absense  in the month of Septmeber 2022?
+    -Define [Late payment charge](keyphrase)
+    -What are the [Legally required](keyphrase) things for my org
+    -What is the number of  Overtime [hours approved](keyphrase) in last paycheck ?
+    -Show me [Pending](keyphrase) deductions
+    -Defination of [Exemption](keyphrase)
+    -Defination of [Corrected Invoice](keyphrase)
+    -Defination of [Payment date](keyphrase)
+    -[FUTA](keyphrase) Defination
+    -What is [Corrected Invoice](keyphrase) in AR
+    -What are the statutory requirement applied to [employee investigations](keyphrase)
+    -What is the meaning of [Payment probablity](keyphrase)
+    -Define [Purchase order](keyphrase) 
+    -Describe [Balance due](keyphrase) in AR
+    -Which are the [Legal](keyphrase) deductions?
+    -What do you mean by [Days Sales Outstanding](keyphrase) (DSO) 
+    -Define [Paid amount](keyphrase) 
+    -List of regulations related to [employement records](keyphrase)
+    -What is the meaning of [Due amount](keyphrase)
+    -What do you mean by [Invoice](keyphrase)
+    -[Inaccurate invoice](keyphrase) means what
+    -What is mean by [Aging](keyphrase)
+    -Define [Payment probablity](keyphrase) 
+    -What are Account Receivable [Billing amount](keyphrase)
+    -Define [Payment date](keyphrase) 
+    -What is mean by [Corrected Invoice](keyphrase)
+    -Where to find the statutory requirement of [employee introduction](keyphrase)
+    -[Aging](keyphrase) means what
+    -What is mean by [Sales](keyphrase)
+    -What is [LOA](keyphrase)?
+    -[Holiday Pay](keyphrase)
+    -Describe [Dispute management](keyphrase) 
+    -What are Account Receivable [Balance due](keyphrase)
+    -[Sales](keyphrase) meaning
+    -Define [Corrected Invoice](keyphrase) in Account Receivable
+    -What is [Collection](keyphrase) in Account Receivable
+    -Defination of [Invoice](keyphrase)
+    -How can I find [Unapproved](keyphrase) deductions?
+    -Describe [Sales](keyphrase) in Account Receivable
+    -What is [Balance due](keyphrase) in Account Receivable
+    -What are [Payment conditions](keyphrase)?
+    -What is [Sales](keyphrase)?
+    -Define [Inaccurate invoice](keyphrase) in AR
+    -what are the most relevant regulation of [employee education](keyphrase)
+    -How many types of statutory requirements applicable to [employee investigation](keyphrase)
+    -What are [Account Receivable](keyphrase)
+    -What do you mean by [Dispute management](keyphrase) 
+    -What are the laws related to [employee reexamination](keyphrase)
+    -Describe [Account Receivable](keyphrase) 
+    -What are the applicable rules & regulation related to [employee documentation](keyphrase)
+    -What is mean by [Due date](keyphrase)
+    -How can I find the number of [Holiday Hours](keyphrase) paid in 2022?
+    -What are AR [Aging report](keyphrase)
+    -Define [Collection](keyphrase) 
+    -[Paid Time Off](keyphrase)
+    -Show me download link for [Withholding Tax Form](keyphrase)
+    -[Unbilled](keyphrase) meaning
+    -What are AR [Corrected Invoice](keyphrase)
+    -[Aging report](keyphrase) means what
+    -[FLSA](keyphrase) Defination
+    -What is mean by [Purchase order](keyphrase)
+    -What is the number of Employees [Return](keyphrase) from Leave of Absense in the month of Septmeber 2022?
+    -Defination of [On Call pay](keyphrase)?
+    -[Best Practices](keyphrase) meaning
+    -What do you mean by [Zone](keyphrase)
+    -Describe [Sales](keyphrase) 
+    -Give me link to the latest [W4 form](keyphrase)
+    -What is number of PTO [Hours approved](keyphrase) by the manager in October 2022?
+    -Describe [Invoice](keyphrase) in AR
+    -What are Account Receivable [Disputes](keyphrase)
+    -What is [Billing date](keyphrase) in Account Receivable
+    -What is [Days Sales Outstanding](keyphrase)?
+    -Can you explain [Invoice accuracy](keyphrase)
+    -Eligibilty for [ACA](keyphrase) reporting
+    -What do you mean by [FASB](keyphrase) 
+    -Dashboard for [Unapproved](keyphrase) deductions
+    -Which are [Unapproved](keyphrase) deduction to be processed?
+    -[ACA](keyphrase) reporting requirements
+    -what [Law](keyphrase) applicable to my org
+    -What are [Pre-tax](keyphrase) deductions?
+    -Describe [Days Sales Outstanding](keyphrase) (DSO) 
+    -Describe [Payment date](keyphrase) 
+    -Define [Balance due](keyphrase) in Account Receivable
+    -What is [delivery receipt](keyphrase)?
+    -Define [Aging report](keyphrase) in Account Receivable
+    -what are the applicable rules & regulation related to [employee coaching](keyphrase)
+    -Define [Overdue](keyphrase) payments.
+    -Describe [Dispute management](keyphrase) in Account Receivable
+    -Define [Due date](keyphrase) in AR
+    -[FASB](keyphrase) meaning
+    -How many Employees [Return](keyphrase) from Leave of Absense in the month of Septmeber 2022?
+    -Show me the total [Number of Employee](keyphrase) received On Call Pay amount in month of October?
+    -What are [Legal](keyphrase) deductions?
+    -[Payment age](keyphrase) means what
+    -What is [Invoice sent within TAT](keyphrase)?
+    -What are Account Receivable [Paid amount](keyphrase)
+    -how many statutory requirement are applicable for [office station](keyphrase)
+    -Show me the list of [Legal](keyphrase) deductions.
+    -What is [Account Receivable](keyphrase)
+    -What is [Aging](keyphrase) in Account Receivable
+    -What is mean by [Payment date](keyphrase)
+    -Where to look for the regulation related to [employee inspection](keyphrase)
+    -Define [Disputes](keyphrase) in Account Receivable
+    -[Aging report](keyphrase) meaning
+    -What are AR [Collection](keyphrase)
+    -Can you explain [Days Sales Outstanding](keyphrase) (DSO) 
+    -Defination of [Dispute management](keyphrase)
+    -What is [Invoice sent within TAT](keyphrase) in Account Receivable
+    -Define [Direct debit](keyphrase)
+    -What do you mean by [Invoice delivery status](keyphrase)
+    -What are the [regulation](keyphrase) applicable for my organisation..?
+    -what are the legal requirement of [employee teaching](keyphrase)
+    -Define [Disputes](keyphrase) 
+    -Show me the total number of  Paid Time Off  Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -What is mean by [SOX Compliance](keyphrase)
+    -Pls define meaning of [Invoice date](keyphrase)
+    -What is the meaning of [Average days to pay](keyphrase)
+    -How can I find the number of overtime [hours approved](keyphrase) in last paycheck
+    -Show me the [Dollar Percenatge](keyphrase) amount received on On call pay in 2022?
+    -Define [Payment age](keyphrase) in AR
+    -What are the laws related [employee History check](keyphrase)
+    -What are the statutory requirements applicable to [employee investigation](keyphrase)
+    -list of applicable [Rules & regulation](keyphrase)
+    -Describe [Invoice sent within TAT](keyphrase) in AR
+    -Describe [Unbilled](keyphrase) in AR
+    -Define [Balance due](keyphrase) in AR
+    -DEadlines of [ACA](keyphrase) reporting
+    -Where can I find number of PTO hours[ approved](keyphrase) by the manager in October 2022?
+    -[PO](keyphrase) meaning
+    -Describe [Days Sales Outstanding](keyphrase) (DSO) in AR
+    -What are Account Receivable [Dispute management](keyphrase)
+    -What is [PTO](keyphrase)?
+    -Define [Dispute management](keyphrase) in Account Receivable
+    -Defination of [Overtime Hours](keyphrase)?
+    -What is [Corrected Invoice](keyphrase)?
+    -Regulation related to [office](keyphrase)
+    -What is mean by [Invoice accuracy](keyphrase)
+    -What are Account Receivable [Unbilled](keyphrase)
+    -What are AR [Invoice sent within TAT](keyphrase)
+    -Defination of [Payment age](keyphrase)
+    -What is [Social Security deduction](keyphrase) act?
+    -Describe [Overdue](keyphrase) in AR
+    -Could you provide the total Paid Time Off  Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -How much are the [Medicare taxes](keyphrase) for FICA?
+    -[Billing date](keyphrase) means what
+    -How Can I find the details of [On Call pay](keyphrase)?
+    -What is [Aging](keyphrase)?
+    -What is [Unbilled amount](keyphrase)?
+    -What are the [Legal Guidlines](keyphrase) applicable to my organisation
+    -what is AR [Age report](keyphrase)
+    -[SOX Audit](keyphrase) means what
+    -What are Account Receivable [Average days to pay](keyphrase)
+    -Describe [Payment age](keyphrase) 
+    -Describe [Invoice delivery status](keyphrase)
+    -What are requirements for [ACA](keyphrase) reporting
+    -Define [Invoice delivery status](keyphrase)
+    -What is the meaning of [Disputes](keyphrase)
+    -What laws are relevant to [employee positioning](keyphrase)
+    -What is the meaning of [Account Receivable](keyphrase)
+    -Defination of [SOX Audit](keyphrase)
+    -Can you explain [Collection](keyphrase) 
+    -What are deadlines for [Affordable Care Act](keyphrase) reporting
+    -Define [Due date](keyphrase) in Account Receivable
+    -Defination of [Payment probablity](keyphrase)
+    -[Payment probablity](keyphrase) means what
+    -What are the regulations of [employee examinations](keyphrase)
+    -Define [PO](keyphrase).
+    -Describe [Overdue](keyphrase) 
+    -What are Account Receivable [Payment probablity](keyphrase)
+    -Describe [Balance due](keyphrase) 
+    -What is [SUTA](keyphrase)?
+    -[Due date](keyphrase) meaning
+    -What are requirements for [Affordable Care Act](keyphrase) reporting
+    -What is the meaning of [Invoice accuracy](keyphrase)
+    -what is AR [paid date](keyphrase)?
+    -What is mean by [Dispute management](keyphrase)
+    -[Days Sales Outstanding](keyphrase) (DSO) meaning
+    -List of regulations related to [Job order](keyphrase) changes
+    -[Best Practices](keyphrase) means what
+    -Describe [Due amount](keyphrase) in AR
+    -Show me the list of [Mandatory](keyphrase) deductions.
+    -What is [Overtime Hours](keyphrase)?
+    -What is [Payment probablity](keyphrase)?
+    -Describe [Inaccurate invoice](keyphrase)
+    -Defination of [FASB](keyphrase)
+    -Describe [Best Practices](keyphrase) 
+    -[Invoice sent within TAT](keyphrase) means what
+    -How many laws are realated to [employee positioning](keyphrase)
+    -Describe [Aging](keyphrase) in AR
+    -Describe [Corrected Invoice](keyphrase) in AR
+    -What do you mean by [Invoice accuracy](keyphrase)
+    -What is the meaning of [Aging report](keyphrase)
+    -What does [FLSA](keyphrase) mean?
+    -what are the legal requirement of [employee survey](keyphrase)
+    -What is [Aging report](keyphrase) in Account Receivable
+    -What are AR [Payment age](keyphrase)
+    -Which are the legal requirement of [employee teaching](keyphrase)
+    -[Affordable Care Act](keyphrase) Eligibility
+    -What are AR [Average days to pay](keyphrase)
+    -can I see the [applicable rules](keyphrase) to my org
+    -Describe [Paid amount](keyphrase) 
+    -Can you explain [Zone](keyphrase)
+    -What is [Remit to address](keyphrase)?
+    -What is [Aging report](keyphrase) in AR
+    -What is the meaning of [Zone](keyphrase)
+    -What is mean by [Overdue](keyphrase)
+    -[Pending](keyphrase) deductions assigned to me
+    -What are Account Receivable [Payment age](keyphrase)
+    -What is the [Best Practices](keyphrase)?
+    -[FICA](keyphrase)
+    -[Due amount](keyphrase) meaning
+    -Describe [Due amount](keyphrase) in Account Receivable
+    -Where can I find the number of overtime [hours approved](keyphrase) in last paycheck?
+    -Define [Paid amount](keyphrase) in AR
+    -What do you mean by [Overtime Hours](keyphrase)?
+    -Can you explain [Inaccurate invoice](keyphrase)
+    -What is [Invoice delivery status](keyphrase)?
+    -what is [Invoice date](keyphrase) on an invoice?
+    -What rule is applicable to [office terminals](keyphrase)
+    -What is mean by [Due amount](keyphrase)
+    -Can you explain [Payment date](keyphrase) 
+    -Defination of [Balance due](keyphrase)
+    -[Zone](keyphrase) meaning
+    -[Corrected Invoice](keyphrase) meaning
+    -What does [FICA](keyphrase) mean?
+    -Requirements of [Affordable Care Act](keyphrase) reporting
+    -What is [Ship to address](keyphrase)?
+    -What is [Average days to pay](keyphrase) in Account Receivable
+    -Can you explain [Unbilled amount](keyphrase)
+    -Describe [Invoice sent within TAT](keyphrase) in Account Receivable
+    -What is [Bill to address](keyphrase)?
+    -what are the rules related to [office terminal](keyphrase)
+    -[Average days to pay](keyphrase) meaning
+    -What is the [employee familarization](keyphrase) legal compliance
+    -Define [Collection](keyphrase) in AR
+    -What is mean by [Balance due](keyphrase)
+    -List of all the statutory requirement of [employee training](keyphrase)
+    -Define [Aging report](keyphrase) 
+    -Define [Due date](keyphrase) 
+    -Describe [Due date](keyphrase) in Account Receivable
+    -Which are the important [Statutory](keyphrase) deductions?
+    -Describe [Overdue](keyphrase) in Account Receivable
+    -Please define [Ship to address](keyphrase)
+    -What is mean by [Invoice sent within TAT](keyphrase)
+    -What is the meaning of [SOX Compliance](keyphrase)
+    -What is [Invoice delivery status](keyphrase) in Account Receivable
+    -[Unbilled amount](keyphrase) meaning
+    -[Collection](keyphrase) means what
+    -What is the number of Employee did not not return from [LOA](keyphrase) in month of October?
+    -What is [Dispute management](keyphrase) in AR
+    -Can you explain [Invoice sent within TAT](keyphrase)
+    -Can you explain [FASB](keyphrase) 
+    -How can I find the [Dollar Percenatge](keyphrase) amount received on On call pay in 2022?
+    -What does [Affordable Care Act ](keyphrase)mean?
+    -What do you mean by [Bill to address](keyphrase)?
+    -Defination of [Invoice sent within TAT](keyphrase)
+    -Can you explain [Aging](keyphrase) 
+    -What statutory requirement applicable to [employee investigation](keyphrase)
+    -[Overdue](keyphrase) means what
+    -What is the meaning of [Best Practices](keyphrase)
+    -Define [Billing date](keyphrase)
+    -What are Account Receivable [Collection](keyphrase)
+    -Define [Overtime Hours](keyphrase)?
+    -Define [Due date](keyphrase) of invoice
+    -What are the [statutory requirement](keyphrase) applied to my org
+    -What is [ACA](keyphrase)?
+    -[Affordable Care Act](keyphrase) reporting eligibility
+    -Define [Accrued Vacation Pay](keyphrase)?
+    -Defination of [Unbilled amount](keyphrase)
+    -What is mean by [Billing amount](keyphrase)
+    -Define [ACA](keyphrase)
+    -What is the meaning of [Unbilled amount](keyphrase)
+    -Defination of [PO](keyphrase)
+    -Describe [Billing date](keyphrase) in AR
+    -Where can I find latest [Withholding Tax Form](keyphrase)?
+    -[Account Receivable](keyphrase) meaning
+    -[Statutory](keyphrase) Deductions
+    -What is the meaning of [Days Sales Outstanding](keyphrase) (DSO)
+    -What rules is applied to [drug test](keyphrase)
+    -What are the regulations related to the [employee settling in](keyphrase)
+    -What is [Zone](keyphrase)?
+    -What is [Due amount](keyphrase)?
+    -[Paid amount](keyphrase) meaning
+    -[Account Receivable](keyphrase) means what
+    -Define [Best Practices](keyphrase) 
+    -What is the meaning of [Billing amount](keyphrase)
+    -Define [Payment method](keyphrase)s.
+    -What is [Payment date](keyphrase) in Account Receivable
+    -Are there any [Unapproved](keyphrase) deductions to be processed on the system?
+    -Regulations related to [Offices](keyphrase)
+    -How many regulation are there related to [employee investigation](keyphrase)
+    -Which are the [Federal](keyphrase) deductions?
+    -Show me [Posttax](keyphrase) deductions
+    -What do you mean by [Account Receivable](keyphrase) 
+    -What is [AR Unbilled amount](keyphrase)
+    -Has [New Hire Reporting](keyphrase) to the state completed?
+    -What is [FLSA](keyphrase)?
+    -What do you mean by [Aging](keyphrase) 
+    -How can I find [Pending](keyphrase) deductions?
+    -What do you mean by [Payment date](keyphrase) 
+    -What regulations are related to [Job order](keyphrase) changes
+    -What is [Corrected Invoice](keyphrase) in Account Receivable
+    -What is [Invoice](keyphrase) in Account Receivable
+    -what are the regulations related to [employee induction](keyphrase)
+    -What is [Inaccurate invoice](keyphrase) in AR
+    -What is [Purchase Order](keyphrase) ?
+    -What is [Overdue](keyphrase) payment?
+    -What are AR [Aging](keyphrase)
+    -Show me the total number of employee did not return from [LOA](keyphrase) in October?
+    -What do you mean by [Invoice sent within TAT](keyphrase)
+    -What do you mean by [Holiday Pay](keyphrase)?
+    -What do you mean by [Three way matching](keyphrase)?
+    -Defination of [Invoice accuracy](keyphrase)
+    -What do you mean by [Payment age](keyphrase) 
+    -How many number of  PTO Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -Defination of [Aging](keyphrase)
+    -Define [Disputes](keyphrase) in AR
+    -[Dispute management](keyphrase) meaning
+    -Describe [Paid amount](keyphrase) in Account Receivable
+    -What do you mean by [Unbilled amount](keyphrase)
+    -Define [Invoice sent within TAT](keyphrase) in AR
+    -What is mean by [Payment age](keyphrase)
+    -Where Can I find the [Number of Employee](keyphrase) received the On Call Pay amount in month of October
+    -DEadlines of [Affordable Care Act](keyphrase) reporting
+    -What is [Payment age](keyphrase) in Account Receivable
+    -what is [Overdue payment charge](keyphrase)s
+    -What are the legally required things for [employee's inquiry](keyphrase)
+    -Could you provide the number of PTO hours[ approved](keyphrase) by the manager in October 2022?
+    -What is the meaning of [Invoice](keyphrase)
+    -which are the laws most applicable to [employee arrangement](keyphrase)
+    -What do you mean by [Remit to address](keyphrase)?
+    -What is [Dispute management](keyphrase) in Account Receivable
+    -regulations related to [employee education](keyphrase)
+    -What is [SOX Compliance](keyphrase)?
+    -What is [Days Sales Outstanding](keyphrase) (DSO) in Account Receivable
+    -Show me the details of [On Call pay](keyphrase)?
+    -Describe [Invoice](keyphrase) in Account Receivable
+    -What do you mean by [Invoice Processing](keyphrase)?
+    -What is [Sales](keyphrase) in Account Receivable
+    -What do you mean by [PO](keyphrase) 
+    -What is [Payment date](keyphrase) in AR
+    -What is [Billing amount](keyphrase) in Account Receivable
+    -Define [Inaccurate invoice](keyphrase) in Account Receivable
+    -What is [Payment terms](keyphrase)?
+    -[Due date](keyphrase) means what
+    -Describe [Balance due](keyphrase) in Account Receivable
+    -What are [Total taxes](keyphrase) for FICA?
+    -Describe [Invoice](keyphrase)
+    -Describe [Aging report](keyphrase) in AR
+    -[Sales](keyphrase) means what
+    -Define [Overdue](keyphrase) in AR
+    -Define [Average days to pay](keyphrase) 
+    -What are AR [Overdue](keyphrase)
+    -What is [Sales](keyphrase) in AR
+    -Describe [Invoice accuracy](keyphrase) in AR
+    -What is mean by [Invoice delivery status](keyphrase)
+    -Defination of [Accrued Vacation Pay](keyphrase)?
+    -Describe [Average days to pay](keyphrase) in AR
+    -[Disputes](keyphrase) means what
+    -How can I the total number of employees [Active](keyphrase) on Leave of Absense  in the month of Septmeber 2022?
+    -[SUTA](keyphrase)
+    -What is [Invoice accuracy](keyphrase)?
+    -What is [Affordable Care Act](keyphrase) reporting eligibility?
+    -What is [Fair Labor Standards Act](keyphrase)?
+    -What is the meaning of [Sales](keyphrase)
+    -What is mean by [Invoice](keyphrase)
+    -What do you mean by [Sales](keyphrase) 
+    -Describe [SOX Audit](keyphrase) 
+    -Show me the applicable rules & regulation for [employee direction](keyphrase)
+    -What is [Unbilled amount](keyphrase) in Account Receivable
+    -What regulations are related to [employee reexamine](keyphrase)
+    -Define [Billing amount](keyphrase) in Account Receivable
+    -Show me the defination of [Holiday Pay](keyphrase)?
+    -What do you mean by [Collection](keyphrase) 
+    -Describe [Billing amount](keyphrase) in Account Receivable
+    -What are Account Receivable [Billing date](keyphrase)
+    -Please provide [Withholding Tax Form](keyphrase)?
+    -What is an [Exemption](keyphrase)?
+    -What is an [Invoice](keyphrase)?
+    -[Unbilled amount](keyphrase) means
+    -What is [AR Invoice](keyphrase)
+    -What are deadlines for [ACA](keyphrase) reporting
+    -Show me the list of [Federal](keyphrase) deductions.
+    -Defination of [Collection](keyphrase)
+    -[SOX Audit](keyphrase) meaning
+    -What is [Inaccurate invoice](keyphrase)?
+    -Define [Payment age](keyphrase) 
+    -What regulation related to [employees history check](keyphrase)
+    -Are there any [Pending](keyphrase) deductions to be processed on the system?
+    -Define [Due amount](keyphrase) in Account Receivable
+    -[SOX Compliance](keyphrase) meaning
+    -Which are the legal requirements of [employees inquiry](keyphrase)
+    -Describe [Purchase order](keyphrase) 
+    -Describe [Billing date](keyphrase)
+    -Which all are [Posttax](keyphrase) deductions?
+    -What are the regulation related to [employee reexamine](keyphrase)
+    -Could you provide the number of [Holiday Pay ](keyphrase)hours paid in 2021?
+    -Defination of [Best Practices](keyphrase)
+    -Defination of [ACA](keyphrase)
+    -What is [Invoice accuracy](keyphrase) in Account Receivable
+    -How many number of Overtime [hours unapproved](keyphrase) in month of Sepember 2022?
+    -Where can I find latest [W4 form](keyphrase)?
+    -Please provide me with [W4 form](keyphrase)?
+    -Requirements of [ACA](keyphrase) reporting
+    -What is mean by [Billing date](keyphrase)
+    -What is a [Bill](keyphrase)
+    -[Due amount](keyphrase) means what
+    -Describe [Aging report](keyphrase) 
+    -What is [Paid amount](keyphrase) in Account Receivable
+    -[Balance due](keyphrase) meaning
+    -What is the meaning of [SOX Audit](keyphrase)
+    -Where Can I find the number of employee did not return from [LOA](keyphrase) in October?
+    -Describe [SOX Compliance](keyphrase) 
+    -Can you explain [Due date](keyphrase) 
+    -Where to find the regulations related to [employee History check](keyphrase)
+    -Describe [Dispute management](keyphrase) in AR
+    -What is the meaning of [Purchase order](keyphrase)
+    -Define [Dispute management](keyphrase) 
+    -Describe [Due date](keyphrase) in AR
+    -How many number of Paid Time Off  Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -What is [Payment date](keyphrase)?
+    -Can you please let me know the rules & regulation applicable for [Workplace](keyphrase)
+    -What is [Paid amount](keyphrase)?
+    -List of [Pretax](keyphrase) deductions in the system
+    -How much are the [Social Security taxes](keyphrase) for FICA?
+    -Describe [Payment date](keyphrase) in Account Receivable
+    -What is [Overdue](keyphrase) in AR
+    -[SUTA](keyphrase) Defination
+    -Can you explain [SOX Audit](keyphrase) 
+    -Define [Days Sales Outstanding](keyphrase) (DSO) 
+    -What is mean by [Unbilled amount](keyphrase)
+    -Show me the total number of Overtime [hours approved](keyphrase) in last paycheck?
+    -Define [Unbilled](keyphrase) in AR
+    -what are the laws which are related to [employee seasoning](keyphrase)
+    -Describe [Average days to pay](keyphrase) in Account Receivable
+    -Define [Three way matching](keyphrase)?
+    -Show me the PTO hours[ approved](keyphrase) by the manager in October 2022?
+    -[Posttax](keyphrase) deductions
+    -What is eligibility for [Affordable Care Act](keyphrase) reporting?
+    -Describe [Disputes](keyphrase) in AR
+    -What are Account Receivable [Invoice accuracy](keyphrase)
+    -Define [Unbilled](keyphrase) 
+    -What is the Total number of PTO Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -Define [Overdue](keyphrase) in Account Receivable
+    -What are AR [Invoice delivery status](keyphrase)
+    -[FASB](keyphrase) means what
+    -most relevant regulation for [employement formalities](keyphrase)
+    -Where can I find the [Dollar Percenatge](keyphrase) amount received on On call Pay in 2022?
+    -What are [Account Receivable best practices](keyphrase)
+    -What is the meaning of [Inaccurate invoice](keyphrase)
+    -What is [Average days to pay](keyphrase) in AR
+    -Describe [Disputes](keyphrase) 
+    -regulations related to the [employee arrangement](keyphrase)
+    -How many number of Overtime [hours approved](keyphrase) in last paycheck?
+    -What are the laws related to [offer of work](keyphrase) changes
+    -What are [AR Billing amount](keyphrase)
+    -[Balance due](keyphrase) means what
+    -[Billing amount](keyphrase) means what
+    -list of all the legal requirement related to [employee survey](keyphrase)
+    -What regulation is related to [employee sharpening](keyphrase)
+    -[Payment age](keyphrase) meaning
+    -What is [Days Sales Outstanding](keyphrase) (DSO) in AR
+    -What is mean by [Days Sales Outstanding](keyphrase) (DSO)
+    -Define [Invoice](keyphrase) in AR
+    -Define [Inaccurate invoice](keyphrase)
+    -[Unapproved](keyphrase) deductions assigned to me
+    -Which all are [Post-tax](keyphrase) deductions?
+    -What does [SUTA](keyphrase) mean?
+    -What is [Unbilled](keyphrase) in AR
+    -What is mean by [Aging report](keyphrase)
+    -What are the regulations related to [employee tune up](keyphrase)
+    -Define [Due amount](keyphrase) 
+    -What is an [Invoice](keyphrase) ?
+    -How can I find the total number of  Paid Time Off  Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -How to report [Affordable Care Act](keyphrase)?
+    -Describe [Payment date](keyphrase) in AR
+    -What is the meaning of [Invoice sent within TAT](keyphrase)
+    -What legal requirements are there for doing [employee placement](keyphrase)
+    -What rule is applicable to [drug test](keyphrase)
+    -What is the meaning of [Aging](keyphrase)
+    -[ACA](keyphrase) Eligibility
+    -[Leave of Absense](keyphrase)
+    -Where can I find the defination of [Holiday Pay](keyphrase)?
+    -Define [Invoice delivery status](keyphrase) in AR
+    -What is number of PTO hours[ approved](keyphrase) by the manager in October 2022?
+    -Define [Aging](keyphrase) in AR
+    -What are Account Receivable [Due amount](keyphrase)
+    -Show me the statutory requirement related to [employee look over](keyphrase)
+    -Describe [Aging](keyphrase) 
+    -Eligibilty of [On Call pay](keyphrase)?
+    -[Purchase order](keyphrase) means what
+    -Defination of [Paid amount](keyphrase)
+    -What is [Balance due](keyphrase)?
+    -What is the meaning of [Paid amount](keyphrase)
+    -Show me download link for [W4 form](keyphrase)
+    -[Billing amount](keyphrase) meaning
+    -What is the meaning of [PO](keyphrase)
+    -What is [Shift  Differentials](keyphrase)?
+    -What is mean by [Collection](keyphrase)
+    -What is [Accrued Vacation Pay](keyphrase)?
+    -Define [Invoice accuracy](keyphrase)
+    -Describe [Unbilled](keyphrase) 
+    -Define [Due amount](keyphrase) in AR
+    -What are Account Receivable [Sales](keyphrase)
+    -[Corrected Invoice](keyphrase) means what
+    -Define [Invoice](keyphrase) in Account Receivable
+    -What do you mean by [Due amount](keyphrase) 
+    -[Invoice sent within TAT](keyphrase) meaning
+    -What legal requirement is there for [employee settling in](keyphrase)
+    -I want to know the regulation related to [employee assessment](keyphrase)
+    -List of [Post-tax](keyphrase) deductions in the system
+    -Show me [Post-tax](keyphrase) deductions
+    -List of deductions [to be processed](keyphrase) on the system
+    -Can you explain [Dispute management](keyphrase) 
+    -[Affordable Care Act](keyphrase) reporting deadlines
+    -Define [Aging report](keyphrase) in AR
+    -Describe [Inaccurate invoice](keyphrase) in Account Receivable
+    -Show me the laws related to [employee seasoning](keyphrase)
+    -[LOA](keyphrase)
+    -Show me download link for [W4 form](keyphrase) on IRS website
+    -Can you explain [Account Receivable](keyphrase) 
+    -[Overdue](keyphrase) meaning
+    -Define [Aging](keyphrase) in Account Receivable
+    -what are AR [DSO](keyphrase)
+    -Which all are [Pretax](keyphrase) deductions?
+    -Show me the PTO [Hours approved](keyphrase) by the manager in October 2022?
+    -Describe [PO](keyphrase) 
+    -Define [Corrected Invoice](keyphrase) in AR
+    -Can you explain [SOX Compliance](keyphrase) 
+    -Define [Auto Debit](keyphrase).
+    -Can you explain [Balance due](keyphrase) 
+    -Give information to report [Affordable Care Act](keyphrase)
+    -[FUTA](keyphrase)
+    -Defination of [FUTA](keyphrase)
+    -Can you explain [Sales](keyphrase) 
+    -What are AR [Days Sales Outstanding](keyphrase) (DSO)
+    -Listdown the [3 documents](keyphrase) required in processing an invoice.
+    -What are AR [Due date](keyphrase)
+    -What regulation are related to [employee investigation](keyphrase)
+    -Regulation realted to [employee followup](keyphrase)
+    -What is eligibility for [ACA](keyphrase) reporting?
+    -What are [Pretax](keyphrase) deductions?
+    -What is [Purchase order](keyphrase)?
+    -What is [Billing date](keyphrase)?
+    -Can you explain [Invoice](keyphrase)
+    -Why [Remit to address](keyphrase) is mentioned on the invoice?
+    -What is [Due date](keyphrase) in AR
+    -What is [Paid amount](keyphrase) in AR
+    -Describe [Sales](keyphrase) in AR
+    -What is [Due amount](keyphrase) in Account Receivable
+    -What do you mean by [Paid amount](keyphrase) 
+    -Describe [Payment age](keyphrase) in Account Receivable
+    -What do you mean by [Payment probablity](keyphrase) 
+    -[Dispute management](keyphrase) means what
+    -Can you explain [Purchase order](keyphrase) 
+    -Describe [Paid amount](keyphrase) in AR
+    -Define [Average days to pay](keyphrase) in AR
+    -Describe [Unbilled amount](keyphrase)
+    -What do you mean by [SOX Compliance](keyphrase) 
+    -Which are the laws for [Place of work](keyphrase)
+    -Show me the applicable rules for [laptop & Personal computer](keyphrase)
+    -Define [Sales](keyphrase) in Account Receivable
+    -Defination of [Leave of Absense](keyphrase) ?
+    -What are AR [Payment probablity](keyphrase)
+    -Can you explain [Billing date](keyphrase)
+    -Show me the defination of [Accrued Vacation Pay](keyphrase)?
+    -Define [FASB](keyphrase) 
+    -most related regulations to [employement formalities](keyphrase)
+    -Define [Payment date](keyphrase) in AR
+    -Which are the regulation related to [employee revaluation](keyphrase)
+    -What do you mean by [Billing amount](keyphrase)
+    -What does [LOA](keyphrase) mean?
+    -What are the statutory requirement of [employee look over](keyphrase)
+    -Define [Balance due](keyphrase) 
+    -Can you explain [Billing amount](keyphrase)
+    -[Exemption](keyphrase)
+    -Describe [Zone](keyphrase)
+    -what are the legal requirement of [employement papers](keyphrase)
+    -Define [Payment terms](keyphrase)
+    -What is mean by [Account Receivable](keyphrase)
+    -What is [3way matching](keyphrase)
+    -What are the statutory requirement of employee [offer changes](keyphrase)
+    -What is [The State Unemployment Tax Act](keyphrase) ?
+    -Describe [Due date](keyphrase) 
+    -List of [Pre-tax](keyphrase) deductions in the system
+    -[Payment date](keyphrase) means what
+    -What does [The Federal Unemployment Tax Act](keyphrase) mean?
+    -Where can I find number of PTO [Hours approved](keyphrase) by the manager in October 2022?
+    -Describe [Inaccurate invoice](keyphrase) in AR
+    -Show me the total number of [Holiday Hours](keyphrase) paid in 2022?
+    -Deductions list [to be processed](keyphrase)
+    -[Social Security contribution](keyphrase) for FICA
+    -[ACA](keyphrase)
+    -Define [Average days to pay](keyphrase) in Account Receivable
+    -Defination of [FLSA](keyphrase)
+    -What are Account Receivable [Invoice delivery status](keyphrase)
+    -What are the applicable rule & regulation for [employee direction](keyphrase)
+    -Defination of [Average days to pay](keyphrase)
+    -Which all are [Pre-tax](keyphrase) deductions?
+    -[Invoice](keyphrase) meaning
+    -Where to look for the applicable rules & regulation of [employee coaching](keyphrase)
+    -[Billing date](keyphrase) meaning
+    -[ACA](keyphrase) Defination
+    -What is [Due date](keyphrase) in Account Receivable
+    -what laws are relevant for [employement files](keyphrase)
+    -How many [Laws](keyphrase) Applicable for my organisation
+    -What are AR [Invoice accuracy](keyphrase)
+    -Describe [Collection](keyphrase) in Account Receivable
+    -Which deductions are [Unapproved](keyphrase)?
+    -Can you explain [Invoice delivery status](keyphrase)
+    -What do you mean by [Payment terms](keyphrase)?
+    -Show me the total number of employee [Active](keyphrase) on  Leave of Absense  in the month of Septmeber 2022?
+    -Where can I find the total number of employee [Active](keyphrase) on  Leave of Absense  in the month of Septmeber 2022?
+    -Could you provide the number of employee [Return](keyphrase) from Leave of Absense in the month of Septmeber 2022?
+    -[Withholding Tax Form](keyphrase)
+    -What do you mean by [Due date](keyphrase) 
+    -What are Account Receivable [Aging](keyphrase)
+    -Define [Unbilled amount](keyphrase) in Account Receivable
+    -Most relevent rules & regulation of employee [offer letter changes](keyphrase)
+    -Defination of [Due date](keyphrase)
+    -Describe [Invoice Processing](keyphrase)
+    -What are AR [Inaccurate invoice](keyphrase)
+    -What is [Overdue](keyphrase) in Account Receivable
+    -What is [Proof of delivery](keyphrase)?
+    -What does [The State Unemployment Tax Act](keyphrase) mean?
+    -What are AR [Unbilled](keyphrase)
+    -What are Account Receivable [Invoice](keyphrase)
+    -Show me the defination of [Overtime Hours](keyphrase)?
+    -Which regulations are most related to [employee tuition](keyphrase)
+    -Define [Payment probablity](keyphrase) in AR
+    -[SOX Compliance](keyphrase) means what
+    -Define [Early pay discount](keyphrase).
+    -Define [Invoice](keyphrase)
+    -What are the [legal requirement](keyphrase) for my organisation
+    -[Shift  Differentials](keyphrase)
+    -Describe [Collection](keyphrase) 
+    -What are Account Receivable [Due date](keyphrase)
+    -What is [Unbilled](keyphrase) in Account Receivable
+    -What is the meaning of [Overdue](keyphrase)
+    -What are the [Statutory](keyphrase) deductions?
+    -What [regulation](keyphrase) applied to my org
+    -How many Employee are [Active](keyphrase) in Leave of Absense in the month of Septmeber 2022?
+    -What are the statutory requirements of [employee's introduction](keyphrase)
+    -What are Account Receivable [Aging report](keyphrase)
+    -Show me the list of all the [Statutory](keyphrase) deductions.
+    -What is [Statutory](keyphrase) deduction?
+    -Defination of [Inaccurate invoice](keyphrase)
+    -What do you mean by [Aging report](keyphrase) 
+    -what is the most important legal guidlines for [employee tuition](keyphrase)
+    -what is the number of Overtime [hours unapproved](keyphrase) in month of Sepember 2022?
+    -[Affordable Care Act](keyphrase) reporting requirements
+    -What do you mean by [Unbilled](keyphrase) 
+    -Give an [Exemption](keyphrase) defination
+    -Give information to report [ACA](keyphrase)
+    -[On Call pay](keyphrase)
+    -Can you explain [Corrected Invoice](keyphrase)
+    -[Invoice delivery status](keyphrase) means what
+    -Describe [Corrected Invoice](keyphrase)
+    -What do you mean by [Best Practices](keyphrase) 
+    -Why is [Invoice Processing](keyphrase) important?
+    -Show me the legal requirement related to [offer of employment](keyphrase) changes
+    -What are AR [Due amount](keyphrase)
+    -Defination of [Days Sales Outstanding](keyphrase) (DSO)
+    -Where can I find the defination of [Shift  Differentials](keyphrase)?
+    -Defination of [Financial Accounting Standard Board](keyphrase)
+    -Show me the [statutory requirement](keyphrase) applicable to my organisation
+    -Can you explain [PO](keyphrase) 
+    -Where to look for the regulations related to the [employee familarization](keyphrase)
+    -Defination of [Disputes](keyphrase)
+    -What is the total number [Holiday Hours](keyphrase) paid in 2022?
+    -What is [Unbilled](keyphrase)?
+    -What are AR [Balance due](keyphrase)
+    -What is [Billing amount](keyphrase)?
+    -What is [Invoice accuracy](keyphrase) in AR
+    -Show me download link for [Withholding Tax Form](keyphrase) on IRS website
+    -Describe [Invoice accuracy](keyphrase) in Account Receivable
+    -Define [Payment age](keyphrase) in Account Receivable
+    -What is [Billing date](keyphrase) in AR
+    -What is [Account Receivable](keyphrase)?
+    -What is the meaning of [Balance due](keyphrase)
+    -Defination of [Sales](keyphrase)
+    -What are theregulations which are relevant for [employees data verification](keyphrase)
+    -What laws are related to [offer of work](keyphrase) changes
+    -Define [Account Receivable](keyphrase) 
+    -What is mean by [Disputes](keyphrase)
+    -What is Account Receivable [Unbilled amount](keyphrase)
+    -Show me the total number of PTO Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -Define [Zone](keyphrase)
+    -Define [FLSA](keyphrase)
+    -Describe [Average days to pay](keyphrase) 
+    -What is [FUTA](keyphrase)?
+    -What is [SOX Audit](keyphrase)?
+    -What is [Invoice sent within TAT](keyphrase) in AR
+    -List of [Posttax](keyphrase) deductions in the system
+    -What is the meaning of [Corrected Invoice](keyphrase)
+    -What is the meaning of [Invoice delivery status](keyphrase)
+    -Describe [FASB](keyphrase) 
+    -Can you explain [Unbilled](keyphrase) 
+    -Can you explain [Paid amount](keyphrase) 
+    -What is mean by [Inaccurate invoice](keyphrase)
+    -Describe [Payment age](keyphrase) in AR
+    -Defination of [Invoice delivery status](keyphrase)
+    -How can I find the number of PTO hours[ approved](keyphrase) by the manager in October 2022?
+    -What are [Federal](keyphrase) deducions?
+    -What is the meaning of [Payment age](keyphrase)
+    -[Disputes](keyphrase) meaning
+    -Could you provide the [Number of Employee](keyphrase) received On call amount in month of October?
+    -What does [FUTA](keyphrase) mean?
+    -What is [Dispute management](keyphrase)?
+    -Can you explain [Payment age](keyphrase) 
+    -What is mean by [SOX Audit](keyphrase)
+    -Describe [Invoice delivery status](keyphrase) in AR
+    -[Purchase order](keyphrase) meaning
+    -Defination of [LOA](keyphrase)?
+    -Can you explain [Payment probablity](keyphrase) 
+    -What is mean by [Payment probablity](keyphrase)
+    -What are AR [Paid amount](keyphrase)
+    -What are AR [Sales](keyphrase)
+    -Define [SOX Audit](keyphrase) 
+    -Define [Invoice accuracy](keyphrase) in Account Receivable
+    -Describe [Payment probablity](keyphrase) in AR
+    -What are Account Receivable [Corrected Invoice](keyphrase)
+    -Where to find the applicable rules & regulations related to [employement documentation](keyphrase)
+    -Describe [Billing amount](keyphrase)
+    -[FICA](keyphrase) contribution
+    -What is [Invoice date](keyphrase)?
+    -What is [On Call pay](keyphrase)?
+    -Show me the total number of Employees [Return](keyphrase) from Leave of Absense in the month of Septmeber 2022?
+    -Define [SUTA](keyphrase)
+    -What is [Payment age](keyphrase) in AR
+    -Define [Billing amount](keyphrase)
+    -List of [FICA](keyphrase) deduction
+    -Defination of [Billing date](keyphrase)
+    -[Invoice delivery status](keyphrase) meaning
+    -What do you mean by [Ship to address](keyphrase)?
+    -[Days Sales Outstanding](keyphrase) (DSO) means what
+    -what are the regulations which are related to [employement records](keyphrase)
+    -What are AR [Disputes](keyphrase)
+    -Define [Collection](keyphrase) in Account Receivable
+    -What do you mean by [Disputes](keyphrase) 
+    -What does mean by [On Call pay](keyphrase)?
+    -Can you explain [Disputes](keyphrase) 
+    -What do you mean by [Balance due](keyphrase) 
+    -What is [Auto Debit](keyphrase)?
+    -What is [Payment probablity](keyphrase) in AR
+    -Defination of [Unbilled](keyphrase)
+    -What is [Holiday Pay](keyphrase)?
+    -What is mean by [Zone](keyphrase)
+    -Describe [Invoice sent within TAT](keyphrase)
+    -What is [Purchase Order](keyphrase)
+    -What is mean by [Average days to pay](keyphrase)
+    -Describe [Corrected Invoice](keyphrase) in Account Receivable
+    -What are [Posttax](keyphrase) deductions?
+    -Where can I find the  total number of  Paid Time Off Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -[Aging](keyphrase) meaning
+    -What is [Balance due](keyphrase) in AR
+    -What is the meaning of [Unbilled](keyphrase)
+    -What is [Federal Insurance Contributions Act](keyphrase)?
+    -Define [PO](keyphrase) 
+    -What is the total number of hours for [Holiday Pay ](keyphrase)is paid in 2021? 
+    -Show me the defination of [Shift  Differentials](keyphrase)?
+    -Define [Billing amount](keyphrase) in AR
+    -What is [The Federal Unemployment Tax Act](keyphrase) ?
+    -[Medicare deduction](keyphrase)
+    -Eligibility of [Overtime Hours](keyphrase)?
+    -What is [Inaccurate invoice](keyphrase) in Account Receivable
+    -How Can I Find the [Number of Employee](keyphrase) received the On Call Pay amount in month of October?
+    -What is the meaning of [FASB](keyphrase)
+    -What is [Disputes](keyphrase) in Account Receivable
+    -What is the [Number of Employee](keyphrase) received the On call Pay amount in month of October?
+    -What are the regulations related to [employee sharpening](keyphrase)
+    -What is [Average days to pay](keyphrase)?
+    -What is [FASB](keyphrase)?
+    -What are Account Receivable [Payment date](keyphrase)
+    -What is [Overdue](keyphrase)?
+    -What is [Leave of Absense](keyphrase)?
+    -[Overtime Hours](keyphrase)
+    -What are the legal requirement of changes in [offer of employment](keyphrase)
+    -Where can I find the total number of employee [Return](keyphrase) from Leave of Absense in the month of Septmeber 2022?
+    -Describe [Invoice delivery status](keyphrase) in Account Receivable
+    -Which are the regulations related to [employement forms filling](keyphrase)
+    -What does [Federal Insurance Contributions Act](keyphrase)?
+    -What is the meaning of [Payment date](keyphrase)
+    -Describe [Billing date](keyphrase) in Account Receivable
+    -Could you provide the number of overtime [hours approved](keyphrase) in last paycheck?
+    -Could you provide the number of employee did not return from [LOA](keyphrase) in October?
+    -legal requirements of [employement papers](keyphrase)
+    -Where can I find the number of [Holiday Hours](keyphrase) paid in 2022?
+    -[ACA](keyphrase) reporting eligibility
+    -Which deductions are [Pending](keyphrase) in the system?
+    -Which are the regulations related to the [employee alignment](keyphrase)
+    -Show me [Pretax](keyphrase) deductions
+    -What is [Early pay discount](keyphrase)?
+    -Most related regulations of [employee tune up](keyphrase)
+    -Define [Invoice accuracy](keyphrase) in AR
+    -What are [Pending](keyphrase) deduction processing?
+    -Defination of [SOX Compliance](keyphrase)
+    -Define [Invoice delivery status](keyphrase) in Account Receivable
+    -What regulations are most relevant for [employee alignment](keyphrase)
+    -What are the rules & regulations related to employee [offer letter changes](keyphrase)
+    -[Withholding Tax Form](keyphrase) for year "mention year"
+    -[Payment date](keyphrase) meaning
+    -Can you explain [Overdue](keyphrase) 
+    -[PO](keyphrase) means what
+    -What are Account Receivable [Inaccurate invoice](keyphrase)
+    -Define [Invoice Processing](keyphrase).
+    -What are the laws related to [employement files](keyphrase)
+    -Could you provide the number of [Holiday Hours](keyphrase) paid in 2022?
+    -How many number of employee did not return from [LOA](keyphrase) in month of October?
+    -[Zone](keyphrase) means what
+    -What do you mean by [Overdue](keyphrase) 
+    -Defination of [Due amount](keyphrase)
+    -[Invoice accuracy](keyphrase) means what
+    -What is the meaning of [Collection](keyphrase)
+    -Where can I find the  total number of  Paid Time Off  Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -What is [Invoice Processing](keyphrase)?
+    -What is mean by [PO](keyphrase)
+    -Defination of [Account Receivable](keyphrase)
+    -Define [Payment date](keyphrase) in Account Receivable
+    -Describe [Aging report](keyphrase) in Account Receivable
+    -What are the statutory requirement of [employement forms](keyphrase)
+    -[Social Security deduction](keyphrase)
+    -What is the meaning of [Due date](keyphrase)
+    -How many PTO hours[ approved](keyphrase) by the manager in October 2022?
+    -How many PTO [Hours approved](keyphrase) by the manager in October 2022?
+    -Show me the regulations related to [employee data verification](keyphrase)
+    -Can you explain [Aging report](keyphrase) 
+    -What is [Aging report](keyphrase)?
+    -Define [FUTA](keyphrase)
+    -What are Account Receivable [Overdue](keyphrase)
+    -What is [FICA](keyphrase)?
+    -Describe [Collection](keyphrase) in AR
+    -What is mean by [Best Practices](keyphrase)
+    -[Pretax](keyphrase) deductions
+    -What is the meaning of [Billing date](keyphrase)
+    -What is [Collection](keyphrase)?
+    -Define [Invoice sent within TAT](keyphrase) in Account Receivable
+    -Define [Sales](keyphrase) in AR
+    -[Payment probablity](keyphrase) meaning
+    -What do you mean by [SOX Audit](keyphrase) 
+    -Define [Shift  Differentials](keyphrase)?
+    -How can I find the number of PTO [Hours approved](keyphrase) by the manager in October 2022?
+    -Could you provide the total PTO Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -[Collection](keyphrase) meaning
+    -What are the regulations applicable for [HR Reviews & Conclusion](keyphrase)
+    -What regulations are related to [employee revaluation](keyphrase)
+    -Define [Days Sales Outstanding](keyphrase) (DSO) in Account Receivable
+    -[Unapproved](keyphrase) deductions
+    -Define [Billing date](keyphrase) in Account Receivable
+    -give me the list of laws related to [employee reexamination](keyphrase)
+    -[Invoice accuracy](keyphrase) meaning
+    -Describe [Payment probablity](keyphrase) in Account Receivable
+    -What are [Post-tax](keyphrase) deductions?
+    -Can you explain [Best Practices](keyphrase) 
+    -Describe [Unbilled amount](keyphrase) in AR
+    -How many number of [Holiday Hours](keyphrase) is paid in 2022? 
+    -What are AR [Payment date](keyphrase)
+    -What is the total number of employee [Active](keyphrase) on Leave of Absense  in the month of Septmeber 2022?
+    -What is [Collection](keyphrase) in AR
+    -Describe [Due amount](keyphrase) 
+    -What is the regulation of employee [data verifications](keyphrase)
+    -Defination of [Holiday Pay](keyphrase)?
+    -Give me the regulations related to [employee examination](keyphrase)
+    -Define [Sales](keyphrase) 
+    -Define [LOA](keyphrase)?
+    -Describe [Invoice accuracy](keyphrase)
+    -What does [FUTA](keyphrase) stands for?
+    -Defination of [Overdue](keyphrase)
+    -Define [Payment probablity](keyphrase) in Account Receivable
+    -Defination of [SUTA](keyphrase)
+    -[Average days to pay](keyphrase) means what
+    -Define [Unbilled amount](keyphrase)
+    -What is [Due date](keyphrase)?
+    -What do you mean by [Due date](keyphrase) on the invoice?
+    -What is [Payment method](keyphrase)?
+    -Show me the the statutory requirement of [employement forms](keyphrase)
+    -What are the rules and regulations applicable to [Workplace](keyphrase)
+    -Defination of [Aging report](keyphrase)
+    -What do you mean by [Accrued Vacation Pay](keyphrase)?
+    -What does [Fair Labor Standards Act](keyphrase) mean?
+    -Define [Days Sales Outstanding](keyphrase) (DSO) in AR
+    -Describe [Payment probablity](keyphrase) 
+    -[Accrued Vacation Pay](keyphrase)
+    -Defination of [Region](keyphrase)
+    -What is the Total number of Paid Time Off Hours [Taken](keyphrase) by the employees in the month of September 2022?
+    -[FLSA](keyphrase)
+    -Define [Invoice sent within TAT](keyphrase)
+    -Define [Billing date](keyphrase) in AR
+    -What are [Modes of payment](keyphrase)s?
+    -What is [Billing amount](keyphrase) in AR
+    -Defination of [Billing amount](keyphrase)
+    -What do you mean by [Purchase order](keyphrase) 
+    -Define [Aging](keyphrase) 
+    -[Pending](keyphrase) deductions
+    -What does [FLSA](keyphrase) stands for?
+    -What is mean by [Paid amount](keyphrase)
+    -What is [Leave of Absense](keyphrase) mean?
+    -what statutory requirement is applicable to [employee training](keyphrase)
+    -Describe [Unbilled](keyphrase) in Account Receivable
+    -What do you mean by [Inaccurate invoice](keyphrase)
+    -What is [Paid Time Off](keyphrase)?
+    -What are the regulations applicable for [offer changes](keyphrase)
+    -What is [Unbilled amount](keyphrase) in AR
+    -Define [Holiday Pay](keyphrase)?
+    -What is [Payment probablity](keyphrase) in Account Receivable
+    -What are the legal requirement of [employee inquiry](keyphrase)
+    -What does [ACA](keyphrase) mean?
+    -How many number of hours for [Holiday Pay ](keyphrase)is paid in 2021? 
+    -What are Account Receivable [Invoice sent within TAT](keyphrase)
+    -Most relevant applicable rules & regulation related to [HR Reviews & Conclusion](keyphrase)
+    -Defination of [Purchase order](keyphrase)
+    -What does [SUTA](keyphrase) stands for?
+    -Why [Due date](keyphrase) to be considered while making invoice payments?
+    -Can you explain [Due amount](keyphrase) 
+    -What are the Statutory requirements applied to [office stations](keyphrase)
+    -What does [ACA](keyphrase) stands for?
+    -What law is for [Place of work](keyphrase)
+    -What is [Bill date](keyphrase) in AR
+    -What is [Payment age](keyphrase)?
+    -Define [Overdue](keyphrase) 
+    -Define [Unbilled amount](keyphrase) in AR
+    -Dashboard for [Pending](keyphrase) deductions
+    -Which are the statutory requirement of employee [offer changes](keyphrase)
+    -Describe [Billing amount](keyphrase) in AR
+    -[W4 form](keyphrase)
+    -What is [Disputes](keyphrase) in AR
+    -What are Account Receivable [Days Sales Outstanding](keyphrase) (DSO)
+    -Describe [Disputes](keyphrase) in Account Receivable
+    -What do you mean by [Average days to pay](keyphrase) 
+    -What are the regulations related to [employee examination](keyphrase)
+    -[Unbilled](keyphrase) means what
+    -Why [Bill to address](keyphrase) is mentioned on the invoice?
+    -What do you mean by [Billing date](keyphrase)
+    -What is the meaning of [Dispute management](keyphrase)
+    -Which are the applicable rules & regulation related to [drug test](keyphrase)
+    -How to report [ACA](keyphrase)?
+    -What do you mean by [Payment method](keyphrase)s?
+    -[Inaccurate invoice](keyphrase) meaning
+    -What is [Due amount](keyphrase) in AR
+    -[ACA](keyphrase) reporting deadlines
+    -Define [Purchase Order](keyphrase)
+    -list all the [Rules & regulation](keyphrase)s
+    -Define [Unbilled](keyphrase) in Account Receivable
+    -Can you explain [Average days to pay](keyphrase) 
+    -Describe [Aging](keyphrase) in Account Receivable
+    -Show me [Pre-tax](keyphrase) deductions
+    -Which are the [Statutory](keyphrase) deductions?
+    -How Can I find the number of employee did not return from [LOA](keyphrase) in October?
+    -Where can I find the details of [On Call pay](keyphrase)?
+    -Describe [Unbilled amount](keyphrase) in Account Receivable
+    -What do you mean by [Auto Debit](keyphrase)?
+    -What are the legal requirement of [employee placement](keyphrase)
+    -Define [SOX Compliance](keyphrase) 
+    -What is mean by [FASB](keyphrase)
+    -Could you provide the number of PTO [Hours approved](keyphrase) by the manager in October 2022?
+    -What is [Invoice delivery status](keyphrase) in AR
+    -What are AR [Dispute management](keyphrase)
+    -Where can I find the details of [Accrued Vacation Pay](keyphrase)?
+    -Define an [Invoice](keyphrase)?
+    -What is [Due date](keyphrase)
+    -Show me the [applicable rules](keyphrase) to my organisation
+    -What is [GRN](keyphrase)
+    -What is [Late payment charge](keyphrase)
+    -What do you mean by [Corrected Invoice](keyphrase)
+    -Which regulation is most relevant for [employee followup](keyphrase)
+    -Define [Corrected Invoice](keyphrase)
+    -What is [Medicare deduction](keyphrase) act?
+    -[Paid amount](keyphrase) means what
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - Menu
+    - menu
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - bye
+    - goodbye
+    - bye bye
+    - exit
+    - exit chat
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+
+
+- intent: deny
+  examples: |
+    - no
+    - n

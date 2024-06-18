@@ -1,0 +1,159 @@
+{
+    "use_case" : "hr_portal",
+    "bot_options" : [
+        "ask question",
+        "seek information",
+        "direct navigation"
+    ],
+    "module_options" : [
+        "payroll",
+        "time sheet",
+        "ar module",
+        "ap module",
+        "employee onboarding",
+        "search across"
+    ],
+    "responses" : {
+        "welcome_message" : {
+            "text" : "Welcome to Hobasa Chatbot",
+            "buttons" : []
+        },
+        "bot_options" : {
+            "text" : "Please Select the option",
+            "buttons" : [
+                {
+                    "title" : "Ask Question",
+                    "payload" : "Ask Question"
+                },
+                {
+                    "title" : "Seek information",
+                    "payload" : "Seek information"
+                },
+                {
+                    "title" : "Direct Navigation",
+                    "payload" : "Direct Navigation"
+                }
+            ]
+        },
+        "retry_botOption" : {
+            "text" : "Invalid Option, Please choose the correct option."
+        },
+        "module_options" : {
+            "text" : "Please Select the Module",
+            "buttons" : [
+                {
+                    "title" : "Payroll",
+                    "payload" : "Payroll"
+                },
+                {
+                    "title" : "Time Sheet",
+                    "payload" : "Time Sheet"
+                },
+                {
+                    "title" : "AR module",
+                    "payload" : "AR module"
+                },
+                {
+                    "title" : "AP module",
+                    "payload" : "AP module"
+                },
+                {
+                    "title" : "Employee Onboarding",
+                    "payload" : "Employee Onboarding"
+                },
+                {
+                    "title" : "Search Across",
+                    "payload" : "Search Across"
+                }
+            ]
+        },
+        "retry_moduleOption" : {
+            "text" : "Invalid module, Please choose the correct module."
+        },
+        "select_question" : {
+            "text" : "Please Select the Question."
+        },
+        "search_question" : {
+            "text" : "Please Type your question"
+        },
+        "reponse_feedback" : {
+            "text" : "",
+            "buttons" : [
+                {
+                    "title" : "I am Happy with the Answer",
+                    "payload" : "I am Happy with the Answer"
+                },
+                {
+                    "title" : "Ask Another Question",
+                    "payload" : "Ask Another Question"
+                },
+                {
+                    "title" : "Ask For Help",
+                    "payload" : "Ask For Help"
+                }
+            ]
+        },
+        "retry_reponse_feedback" : {
+            "text" : "Invalid option, Please try again."
+        },
+        "support_options" : {
+            "text" : "Please Select Bellow options",
+            "buttons" : [
+                {
+                    "title" : "Speek to Us",
+                    "payload" : "Speek to Us"
+                },
+                {
+                    "title" : "Rise a service request",
+                    "payload" : "Rise a service request"
+                }
+            ]
+        },
+        "retry_support_type" : {
+            "text" : "Invalid supprot type, Please try again."
+        },
+        "feed_back_rating" : {
+            "text" : "Overall Satisfaction Rating",
+            "buttons" : [
+                {
+                    "title" : "1",
+                    "payload" : "1"
+                },
+                {
+                    "title" : "2",
+                    "payload" : "2"
+                },
+                {
+                    "title" : "3",
+                    "payload" : "3"
+                },
+                {
+                    "title" : "4",
+                    "payload" : "4"
+                },
+                {
+                    "title" : "5",
+                    "payload" : "5"
+                }
+            ]
+        },
+        "retry_feed_back_rating" : {
+            "text" : "Invalid rating. Please try again"
+        },
+        "call_support" : {
+            "text" : "connect to customer service representative, call: available from 9AM-6PM"
+        },
+        "rise_mail_support" : {
+            "text" : "raise a service request: provide a link to the service request module"
+        },
+        "end_chat" : {
+            "text" : "Thank you",
+            "buttons" : [
+                {
+                    "title" : "Menu",
+                    "payload" : "Menu"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+#  hr_portal-init:
+#    image: hr_portal:latest
+#    env_file:
+#      - ./common.env
+#    entrypoint:
+#      - sh
+#      - /src/bin/run
+#    command:
+#      - init
+##    depends_on:
+##      - mongo
+
+  hr_portal-action:
+    image: hr_portal:latest
+    env_file:
+      - ./common.env
+    entrypoint:
+      - sh
+      - /src/bin/run
+    command:
+      - action
+    ports:
+      - 5055:5055
+#    depends_on:
+#      - gcds-init
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+  hr_portal-endpoint:
+    image: hr_portal:latest
+    env_file:
+      - ./common.env
+    entrypoint:
+      - sh
+      - /src/bin/run
+    command:
+      - endpoint
+    ports:
+      - 5005:5005
+#    depends_on:
+#      - gcds-init
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any

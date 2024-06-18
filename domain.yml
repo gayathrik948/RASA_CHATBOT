@@ -1,0 +1,55 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - questions
+  - reset_chat
+
+
+entities:
+  - keyphrase
+
+actions:
+  - action_welcome
+  - action_endchat
+  - action_validate_keyword
+  - action_retrieve_answer
+  - action_arifm_y_n
+  - action_reset_chat
+
+slots:
+  botOption:
+    type: text
+  module:
+    type: text
+  question:
+    type: text
+  user_id:
+    type: text
+  feed_back_rating:
+    type: text
+  retry_slot:
+    type: text
+  answer:
+    type: text
+  support_type:
+    type: text
+  reponse_feedback:
+    type: text
+
+forms:
+  - botOption_form
+  - module_form
+  - response_form
+  - feedback_form
+  - support_form
+  - seek_information_form
+  - direct_navigation_form
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
